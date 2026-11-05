@@ -1,0 +1,256 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:764adda4-a04b-477a-b8d8-4d35345d9ea3",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-05T23:38:06.030327+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "C51.exe",
+          "version": "V9.60.7.0",
+          "hashes": [
+            {
+              "alg": "SHA256",
+              "content": "e54096a4608671427bde2fd5edf939bf8f44ad7dc79676b7e9290422f25e6ff7"
+            },
+            {
+              "alg": "SHA1",
+              "content": "9113d6ed8898cafc3e3d143ee8cc5034c7a8767a"
+            },
+            {
+              "alg": "MD5",
+              "content": "73595af4d333d6cb903f8ad2dae027a0"
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "name": "A51.exe",
+          "version": "V8.2.7.0",
+          "hashes": [
+            {
+              "alg": "SHA256",
+              "content": "f9c791ce9ef6e4ab401f2378cd5a98ddd2ab2aa8f6da77fa3993de51b152f63c"
+            },
+            {
+              "alg": "SHA1",
+              "content": "8b93b7e3640be510e604f90a895d0315213c5166"
+            },
+            {
+              "alg": "MD5",
+              "content": "51b5ef681024a150878867e5c2676841"
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "name": "BL51.exe",
+          "version": "V9.61",
+          "hashes": [
+            {
+              "alg": "SHA256",
+              "content": "c59a29594f728ae6714782d148985df69e538726353d045fc2329186b50441c3"
+            },
+            {
+              "alg": "SHA1",
+              "content": "e9f498aa285a043cfd62f20e17cdf4d0ac65226c"
+            },
+            {
+              "alg": "MD5",
+              "content": "a49f2981621eb09e49fcf752a1c7e86f"
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "name": "OH51.exe",
+          "version": "V2.7.0.0",
+          "hashes": [
+            {
+              "alg": "SHA256",
+              "content": "69d3419af8fa7bbfd9d38755ede9f641814390541c4cd2e6e2c3c93f87cb6a7b"
+            },
+            {
+              "alg": "SHA1",
+              "content": "343072008534bda14f7d6a4719b2f12c8ebb6d53"
+            },
+            {
+              "alg": "MD5",
+              "content": "addd2a0f3371b796c378831dadf8dd97"
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:generic/firmware/w78_std_8051@1.0.0",
+      "name": "w78_std_8051",
+      "version": "1.0.0",
+      "description": "Intel HEX Firmware for W78E052D (Winbond / Nuvoton W78 series)",
+      "hashes": [
+        {
+          "alg": "SHA256",
+          "content": "cfccf11b6a7e48aa122c37b15cfc3820f295de1146699b437021b41a23745c67"
+        },
+        {
+          "alg": "SHA1",
+          "content": "1650b9224be58108a7a75dce32f548b1d4193938"
+        },
+        {
+          "alg": "MD5",
+          "content": "14ac471f911b43d5196c70c74cda49b8"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "keil:suite_version",
+        "value": "V9.61"
+      },
+      {
+        "name": "keil:memory_model",
+        "value": "SMALL"
+      },
+      {
+        "name": "bsp:status",
+        "value": "None (Standard 8051 Bare-Metal)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "pkg:hardware/mcu/w78e052d@1.0.0",
+      "name": "W78E052D",
+      "version": "1.0.0",
+      "supplier": {
+        "name": "Nuvoton"
+      },
+      "description": "Target 8051 Microcontroller: W78E052D (Nuvoton), IRAM(0x00-0xFF) IROM(0x0000-0x1FFF) CLOCK(40000000)"
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:file/header/REG52.H@328f7051",
+      "name": "REG52.H",
+      "version": "Keil C51 Standard Header",
+      "description": "-------------------------------------------------------------------------- REG52.H Header file for generic 80C52 and 80C32 microcontroller. Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Softwa",
+      "hashes": [
+        {
+          "alg": "SHA256",
+          "content": "328f70518222cc9fea6a1430103942fd4290f9e8b8028804379e011fa411ca4b"
+        },
+        {
+          "alg": "SHA1",
+          "content": "f02702ea58c5504912ab6650efc196cde2977452"
+        },
+        {
+          "alg": "MD5",
+          "content": "47f690a4fce7d205413960ef3a1f9f98"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file:path",
+          "value": "C:\\Users\\tester\\AppData\\Local\\Keil_v5\\C51\\INC\\REG52.H"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:file/header/INTRINS.H@027ed466",
+      "name": "INTRINS.H",
+      "version": "Keil C51 Standard Header",
+      "description": "-------------------------------------------------------------------------- INTRINS.H Intrinsic functions for C51. Copyright (c) 1988-2010 Keil Elektronik GmbH and ARM Germany GmbH All rights reserved.",
+      "hashes": [
+        {
+          "alg": "SHA256",
+          "content": "027ed466a548c63680438def00fbab3dc745c83c5a9d276738b5089379479b05"
+        },
+        {
+          "alg": "SHA1",
+          "content": "3744e70c38d842cdb233690642e0b12e89384aed"
+        },
+        {
+          "alg": "MD5",
+          "content": "7d5a4b358e2b84e2795b23252d31f993"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file:path",
+          "value": "C:\\Users\\tester\\AppData\\Local\\Keil_v5\\C51\\INC\\INTRINS.H"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:file/source/main.c@4616726c",
+      "name": "main.c",
+      "version": "1.0.0",
+      "description": "Firmware source file: main.c",
+      "hashes": [
+        {
+          "alg": "SHA256",
+          "content": "4616726c8ad7c114c2a13039361935188f476d62d2bd566465d0147f9873e398"
+        },
+        {
+          "alg": "SHA1",
+          "content": "a35f213f487cbe8b996736f8dd93cace54a7b680"
+        },
+        {
+          "alg": "MD5",
+          "content": "722d4596f8d9ca56aed1586dd7fdc625"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file:path",
+          "value": "C:\\Users\\tester\\Desktop\\c51 sbom\\project\\src\\main.c"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:file/source/STARTUP.A51@0298d03e",
+      "name": "STARTUP.A51",
+      "version": "1.0.0",
+      "description": "Firmware source file: STARTUP.A51",
+      "hashes": [
+        {
+          "alg": "SHA256",
+          "content": "0298d03e409c9ecb60da335aec3d7a3eee98762c3efd9dd12eab7612c7104011"
+        },
+        {
+          "alg": "SHA1",
+          "content": "d9a2b9b0dc683edcde3db0fa76ef04fcdfe40f21"
+        },
+        {
+          "alg": "MD5",
+          "content": "1c989c40ce75ac57844989c7deb5a72b"
+        }
+      ],
+      "properties": [
+        {
+          "name": "file:path",
+          "value": "C:\\Users\\tester\\Desktop\\c51 sbom\\project\\src\\STARTUP.A51"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:generic/firmware/w78_std_8051@1.0.0",
+      "dependsOn": [
+        "pkg:hardware/mcu/w78e052d@1.0.0",
+        "pkg:file/source/main.c@4616726c",
+        "pkg:file/source/STARTUP.A51@0298d03e",
+        "pkg:file/header/REG52.H@328f7051",
+        "pkg:file/header/INTRINS.H@027ed466"
+      ]
+    }
+  ]
+}

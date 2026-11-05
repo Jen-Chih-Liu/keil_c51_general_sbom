@@ -1,0 +1,139 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "w78_std_8051",
+  "documentNamespace": "https://spdx.org/spdxdocs/w78_std_8051-8214ef68-38a1-47ce-83cb-23d4d6ac85d5",
+  "creationInfo": {
+    "created": "2026-11-05T05:54:02Z",
+    "creators": [
+      "Tool: C51-SBOM-Generator-1.0",
+      "Tool: Keil C51-V9.61"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-FirmwareHex",
+      "name": "w78_std_8051.hex",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9c9e09be28db7e94ba597e04d10d47fe315f61f55910366004c8d8a88aa203cc"
+        },
+        {
+          "algorithm": "MD5",
+          "checksumValue": "b90be40a99e5bc019574acbebe45a13f"
+        }
+      ],
+      "description": "Target firmware image for W78E052D"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-MCU",
+      "name": "W78E052D",
+      "versionInfo": "Standard 8051 Core",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Nuvoton",
+      "description": "Microcontroller: W78E052D, IRAM(0x00-0xFF) IROM(0x0000-0x1FFF) CLOCK(40000000)"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Lib-0",
+      "name": "C51S.LIB",
+      "versionInfo": "V9.61",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "supplier": "Organization: Keil / Arm",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aaf864826f6efc6fc60cd5d4f7eb3eb885e19cfe68cebf4600ee76135d9c9cf0"
+        }
+      ],
+      "description": "Keil C51 Runtime Library (SMALL model), Modules: ?C_INIT, ?C?UIDIV, ?C?SLCMP"
+    }
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-Header-0",
+      "fileName": "REG52.H",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "328f70518222cc9fea6a1430103942fd4290f9e8b8028804379e011fa411ca4b"
+        }
+      ],
+      "noticeText": "-------------------------------------------------------------------------- REG52.H Header file for generic 80C52 and 80C32 microcontroller. Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Softwa"
+    },
+    {
+      "SPDXID": "SPDXRef-File-Header-1",
+      "fileName": "INTRINS.H",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "027ed466a548c63680438def00fbab3dc745c83c5a9d276738b5089379479b05"
+        }
+      ],
+      "noticeText": "-------------------------------------------------------------------------- INTRINS.H Intrinsic functions for C51. Copyright (c) 1988-2010 Keil Elektronik GmbH and ARM Germany GmbH All rights reserved."
+    },
+    {
+      "SPDXID": "SPDXRef-File-Source-0",
+      "fileName": "main.c",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4616726c8ad7c114c2a13039361935188f476d62d2bd566465d0147f9873e398"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-Source-1",
+      "fileName": "STARTUP.A51",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0298d03e409c9ecb60da335aec3d7a3eee98762c3efd9dd12eab7612c7104011"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-FirmwareHex"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-FirmwareHex",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-MCU"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-FirmwareHex",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-Lib-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-FirmwareHex",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-Header-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-FirmwareHex",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-Header-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-FirmwareHex",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-Source-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-FirmwareHex",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-Source-1"
+    }
+  ]
+}
